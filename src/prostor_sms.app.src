@@ -1,0 +1,22 @@
+{application, prostor_sms,
+ [
+  {description, "API to http://www.prostortele.com/support/api"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  hackney,
+                  sutil,
+                  gproc,
+                  jiffy,
+                  lager
+                 ]},
+  {mod, { prostor_sms_app, []}},
+  {env, [{base_url, <<"http://api.prostor-sms.ru/messages/v2">>}
+        , {request_opts, [{connect_timeout, 8000}, {recv_timeout, 60000}]}
+        , {login, <<"FIXME">>}
+        , {password, <<"FIXME">>}
+        , {src_address, <<"Message">>}
+        ]}
+ ]}.

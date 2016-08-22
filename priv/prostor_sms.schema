@@ -1,0 +1,21 @@
+%% -*-  coding: utf-8; mode: erlang; erlang-indent-level: 4; indent-tabs-mode: nil -*-
+%% @doc Prostor SMS config
+
+%% @doc Login for SMS service
+{mapping, "prostor_sms.login", "prostor_sms.login",
+ [{datatype, string},
+  {default, "FIXME"}
+ ]
+}.
+%% @doc Password for SMS service
+{mapping, "prostor_sms.password", "prostor_sms.password",
+ [{datatype, string},
+  {default, "FIXME"}
+ ]
+}.
+%% @doc Source address for SMS service
+{mapping, "prostor_sms.address", "prostor_sms.src_address",
+ [{datatype, string},
+  {default, "TESTSMS"}
+ ]
+}.
